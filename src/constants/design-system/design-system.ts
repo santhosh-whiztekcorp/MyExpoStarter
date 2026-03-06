@@ -1,0 +1,102 @@
+import { FONT_FAMILY } from '../../components/providers/font-provider/font-provider.constants';
+import { Colors, FontFamilies, Radii, Spacings } from './design-system.types';
+
+export const colors: Colors = {
+  light: {
+    background: 'hsl(0 0% 100%)',
+    foreground: 'hsl(20 14.3% 4.1%)',
+    card: 'hsl(0 0% 100%)',
+    cardForeground: 'hsl(20 14.3% 4.1%)',
+    popover: 'hsl(0 0% 100%)',
+    popoverForeground: 'hsl(20 14.3% 4.1%)',
+    primary: 'hsl(47.9 95.8% 53.1%)',
+    primaryForeground: 'hsl(26 83.3% 14.1%)',
+    secondary: 'hsl(60 4.8% 95.9%)',
+    secondaryForeground: 'hsl(24 9.8% 10%)',
+    muted: 'hsl(60 4.8% 95.9%)',
+    mutedForeground: 'hsl(25 5.3% 44.7%)',
+    accent: 'hsl(60 4.8% 95.9%)',
+    accentForeground: 'hsl(24 9.8% 10%)',
+    destructive: 'hsl(0 84.2% 60.2%)',
+    destructiveForeground: 'hsl(60 9.1% 97.8%)',
+    border: 'hsl(20 5.9% 90%)',
+    input: 'hsl(20 5.9% 90%)',
+    ring: 'hsl(20 14.3% 4.1%)',
+    chart1: 'hsl(12 76% 61%)',
+    chart2: 'hsl(173 58% 39%)',
+    chart3: 'hsl(197 37% 24%)',
+    chart4: 'hsl(43 74% 66%)',
+    chart5: 'hsl(27 87% 67%)',
+  },
+  dark: {
+    background: 'hsl(20 14.3% 4.1%)',
+    foreground: 'hsl(60 9.1% 97.8%)',
+    card: 'hsl(20 14.3% 4.1%)',
+    cardForeground: 'hsl(60 9.1% 97.8%)',
+    popover: 'hsl(20 14.3% 4.1%)',
+    popoverForeground: 'hsl(60 9.1% 97.8%)',
+    primary: 'hsl(47.9 95.8% 53.1%)',
+    primaryForeground: 'hsl(26 83.3% 14.1%)',
+    secondary: 'hsl(12 6.5% 15.1%)',
+    secondaryForeground: 'hsl(60 9.1% 97.8%)',
+    muted: 'hsl(12 6.5% 15.1%)',
+    mutedForeground: 'hsl(24 5.4% 63.9%)',
+    accent: 'hsl(12 6.5% 15.1%)',
+    accentForeground: 'hsl(60 9.1% 97.8%)',
+    destructive: 'hsl(0 62.8% 30.6%)',
+    destructiveForeground: 'hsl(60 9.1% 97.8%)',
+    border: 'hsl(12 6.5% 15.1%)',
+    input: 'hsl(12 6.5% 15.1%)',
+    ring: 'hsl(35.5 91.7% 32.9%)',
+    chart1: 'hsl(220 70% 50%)',
+    chart2: 'hsl(160 60% 45%)',
+    chart3: 'hsl(30 80% 55%)',
+    chart4: 'hsl(280 65% 60%)',
+    chart5: 'hsl(340 75% 55%)',
+  },
+};
+
+export const fontFamilies: FontFamilies = {
+  // Primary
+  primary: FONT_FAMILY.Poppins.Regular,
+  primaryLight: FONT_FAMILY.Poppins.Light,
+  primaryRegular: FONT_FAMILY.Poppins.Regular,
+  primaryMedium: FONT_FAMILY.Poppins.Medium,
+  primarySemiBold: FONT_FAMILY.Poppins.SemiBold,
+  primaryBold: FONT_FAMILY.Poppins.Bold,
+  primaryExtraBold: FONT_FAMILY.Poppins.ExtraBold,
+  primaryItalic: FONT_FAMILY.Poppins.Italic,
+
+  // Secondary
+  secondary: FONT_FAMILY.IBMPlexSerif.Regular,
+  secondaryLight: FONT_FAMILY.IBMPlexSerif.Light,
+  secondaryRegular: FONT_FAMILY.IBMPlexSerif.Regular,
+  secondaryMedium: FONT_FAMILY.IBMPlexSerif.Medium,
+  secondarySemiBold: FONT_FAMILY.IBMPlexSerif.SemiBold,
+  secondaryBold: FONT_FAMILY.IBMPlexSerif.Bold,
+  secondaryItalic: FONT_FAMILY.IBMPlexSerif.Italic,
+};
+
+export const radii: Radii = {
+  none: 0,
+  xs: 2,
+  sm: 4,
+  md: 6,
+  lg: 8,
+  xl: 12,
+  '2xl': 16,
+  full: 9999,
+  default: 10.4,
+  large: 15.2,
+};
+
+export const spacings: Spacings = {
+  none: 0,
+  xs: 4,
+  sm: 8,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  '2xl': 48,
+  '3xl': 64,
+};
