@@ -18,22 +18,16 @@ module.exports = defineConfig([
           groups: [
             [
               '^\\u0000',
-              // Packages. `react` related packages come first.
               '^react$',
               '^react-native$',
               '^expo',
-              // Other packages (expo, etc)
               '^@?\\w',
-              // Internal packages.
               '^(@|components)(/.*|$)',
-              // Parent imports. Put `..` last.
               '^\\.\\.(?!/?$)',
               '^\\.\\./?$',
-              // Other relative imports. Put same-folder imports and `.` last.
               '^\\./(?=.*/)(?!/?$)',
               '^\\.(?!/?$)',
               '^\\./?$',
-              // Style imports.
               '^.+\\.?(css)$',
             ],
           ],
