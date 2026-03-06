@@ -1,5 +1,5 @@
-import { SampleScreen } from '@/screens/sample-screeen';
+import { SignUpScreen } from '@/features/auth/screens/sign-up-screen';
 
 export default function Index() {
-  return <SampleScreen />;
+  return <SignUpScreen />;
 }

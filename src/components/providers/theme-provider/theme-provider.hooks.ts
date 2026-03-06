@@ -4,7 +4,7 @@ import { useRootStore } from '@/store/root-store';
 import { updateNativeUI } from '@/utils/ui-utils';
 
 export const useThemeProvider = () => {
-  const { colorScheme } = useRootStore();
+  const { colorScheme, setResolvedTheme } = useRootStore();
   const systemColorScheme = useColorScheme();
 
   const activeTheme = colorScheme === 'system' ? systemColorScheme : colorScheme;
@@ -12,7 +12,8 @@ export const useThemeProvider = () => {
 
   useEffect(() => {
     updateNativeUI(activeTheme);
-  }, [activeTheme]);
+    setResolvedTheme(isDark ? 'dark' : 'light');
+  }, [activeTheme, isDark, setResolvedTheme]);
 
   return {
     activeTheme,

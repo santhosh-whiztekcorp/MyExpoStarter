@@ -7,8 +7,10 @@ export const useRootStore = create<RootState>()(
   persist(
     (set) => ({
       colorScheme: 'system',
+      resolvedColorScheme: 'light',
       fontsLoaded: false,
       setTheme: (colorScheme) => set({ colorScheme }),
+      setResolvedTheme: (resolvedColorScheme) => set({ resolvedColorScheme }),
       setFontsLoaded: (fontsLoaded) => set({ fontsLoaded }),
     }),
     {
