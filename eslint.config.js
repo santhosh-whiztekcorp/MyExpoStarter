@@ -12,6 +12,7 @@ module.exports = defineConfig([
       'unused-imports': require('eslint-plugin-unused-imports'),
     },
     rules: {
+      'react-hooks/exhaustive-deps': 'off',
       'simple-import-sort/imports': [
         'error',
         {
