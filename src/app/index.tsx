@@ -1,5 +1,12 @@
-import { SignUpScreen } from '@/features/auth/screens/sign-up-screen';
+import { useEffect } from 'react';
+import { useRouter } from 'expo-router';
 
 export default function Index() {
-  return <SignUpScreen />;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/(main)');
+  }, [router]);
+
+  return null;
 }
